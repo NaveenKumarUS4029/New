@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AdminRegistration">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/ad_textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textSize="40dp"
+                        android:gravity="center"
+                        android:textColor="#8BC34A"
+                        android:text="Admin Registration" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ad_organname_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/ic_baseline_verified_user_24"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <EditText
+                            android:id="@+id/ad_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Organisation Name"
+                            android:textColorHighlight="#7cff88"
+                            android:background="@color/white"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ad_locaname_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/ic_baseline_location_on_24"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <EditText
+                            android:id="@+id/ad_loc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Camp Location"
+                            android:textColorHighlight="#7cff88"
+                            android:background="@color/white"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ad_mobname_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/ic_baseline_mobile_friendly_24"
+                        app:counterEnabled="false"
+                        app:counterMaxLength="10"
+                        app:counterTextAppearance="@style/counterText"
+                        app:counterOverflowTextAppearance="@style/counterOverride"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <EditText
+                            android:id="@+id/ad_mob2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Mobile Number"
+                            android:textColorHighlight="#7cff88"
+                            android:background="@color/white"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ad_pass_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/ic_baseline_password_24"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <EditText
+                            android:id="@+id/ad_psw2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Enter Password"
+                            android:textColorHighlight="#7cff88"
+                            android:background="@color/white"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ad_repass_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/ic_baseline_password_24"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <EditText
+                            android:id="@+id/ad_repsw2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Re-Enter Password"
+                            android:textColorHighlight="#7cff88"
+                            android:background="@color/white"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <CheckBox
+                        android:id="@+id/ad_checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:text="I Agree" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/ad_back_btn2"
+                        android:onClick="ad_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="60dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button"
+                        android:text="Back" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/ad_regi_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button"
+                        android:text="Register" />
+
+
+
+                </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
